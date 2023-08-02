@@ -53,7 +53,7 @@ class Im():
     def show(self, figsize=(10, 10)):
         fig = plt.figure(figsize=figsize)
         plt.axis("off")
-        plt.imshow(self.render(), vmin=0, vmax=1)
+        plt.imshow(np.array(self.image), vmin=0, vmax=1)
         plt.show()
 
     def _ipython_display_(self):
